@@ -1,0 +1,8 @@
+<nb-card accent="primary">
+    <nb-card-header><h2>Who are you?</h2></nb-card-header>
+        <nb-card-body>
+            <form (submit)="onSubmit()" class="iform">
+                <input type="text" [(ngModel)]="username" [ngModelOptions]="{standalone: true}" nbInput fullWidth status="primary" placeholder="Username" fieldSize="giant">
+            </form>
+        </nb-card-body>
+</nb-card>
